@@ -59,33 +59,35 @@
       <div id="box">
         <div class="z-depth-5 white lighten-4 row" id="form-block">
             <h5 class="indigo-text choice">Login into your account</h5>
-          <form class="col s12" method="post">
+          <form  method="post">
             <div class='row'>
               <div class='input-field col s12'>
                 <label for='email'>Enter your email</label>
                 <input class='validate' type='email' name='email' id='email' required/>
               </div>
-            </div>
-
-            <div class='row'>
+          
               <div class='input-field col s12'>
                 <label for='password'>Enter your password</label>
                 <input class='validate' type='password' name='password' id='password' required/>
               </div>
+              <div class="col s12">
               <label style='float: right;'>
                     <a class='red-text' href='#!'>Forgot Password?</a>
               </label>
-            </div>
-              <div class='row'>
+              </div>
+              <div class='col s12'>
                 <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect teal'>Login</button>
               </div>
               <hr>
+              <div class='col s12'>
               <p class="choice">Or Sign In with</p>
-              <div class='row'>
+              
                 <button type='submit' name='gmail_login' class='col s12 btn btn-large waves-effect red'>Google</button>
+              </div>
               </div>
           </form>
         </div>
+
         <div class="container">
             <span class="white-text">Not a member yet? <a href="signup.html">Create account</a></span>
         </div>
@@ -103,8 +105,8 @@
                 <h4 class="white-text">Site Map</h4>
                 <ul><!--href link added-->
                   <li><a class="teal-text scrollspy text-lighten-3" href="index.html">Home</a></li>
-                  <li><a class="teal-text scrollspy text-lighten-3" href="index.html/#intro">Introduction</a></li>
-                  <li><a class="teal-text scrollspy text-lighten-3" href="index.html/#why">Why TaskMaster</a></li>
+                  <li><a class="teal-text scrollspy text-lighten-3" href="index.html#intro">Introduction</a></li>
+                  <li><a class="teal-text scrollspy text-lighten-3" href="index.html#why">Why TaskMaster</a></li>
 
                 </ul>
               </div>
@@ -166,11 +168,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
     <script src="./js/init.js"></script>
     <script src="js/formanimate.js"></script>
-    <script src="js/slider.js"></script>
+    <!-- <script src="js/slider.js"></script> -->
     <script src="js/wow.min.js"></script>
       <!-- custom script edited on 12th April,18(@DeepPurohit) -->
       <script>
-          new WOW().init();
+          // new WOW().init();
           //adding scrolling style
           const ss = document.querySelectorAll('.scrollspy');
           M.ScrollSpy.init(ss, {});
@@ -179,13 +181,13 @@
             const menu = document.querySelector('.sidenav');
             M.Sidenav.init(menu, {});
           //image slider
-            const slider = document.querySelector('.slider');
-            M.Slider.init(slider, {
-              indicators: false,
-              height: 500,
-              transition: 500,
-              interval: 6000
-            });
+            // const slider = document.querySelector('.slider');
+            // M.Slider.init(slider, {
+            //   indicators: false,
+            //   height: 500,
+            //   transition: 500,
+            //   interval: 6000
+            // });
       </script>
 
 </body>
